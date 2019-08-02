@@ -1,0 +1,33 @@
+\mode<presentation>
+
+% define some color, because see the world through RGB is better than grayscale
+\definecolor{tapasGreen}{RGB}{102,204,0}
+% define some font (here you need Arial font)
+\setbeamerfont{smallfoot}{size={\fontsize{4}{5}}}
+\setbeamerfont{title}{size={\fontsize{22}{25}}}
+\setbeamerfont{tapasname}{size={\fontsize{13}{15}}}
+\setbeamerfont{author}{size={\fontsize{10}{12}}}
+% Title page ( show a hudge Tapas logo to impress you audience)
+
+\defbeamertemplate*{title page}{Tapas}[1][]
+{
+    \center 
+    \usebeamerfont{title}\inserttitle\par
+    \vskip0.4cm
+    \includegraphics[scale=1.8]{img/Tapas.png}
+    
+    \usebeamerfont{tapasname}
+    \textbf{\color{tapasGreen}T}raining network on \textbf{\color{tapasGreen}{A}}utomatic \textbf{\color{tapasGreen}{P}}rocessing of p\textbf{\color{tapasGreen}{A}}thological \textbf{\color{tapasGreen}{S}}peech 
+    \vskip0.4cm
+    \usebeamerfont{author}\insertauthor%
+    \vskip0.4cm
+    \usebeamerfont{author}\insertdate%
+\vfill
+\hskip-6cm
+    \includegraphics[scale=0.03]{img/Flag_of_Europe.png}
+    \vskip-0.5cm
+    \usebeamerfont{smallfoot}\color{gray}This project has received funding from the European Union's Horizon 2020\\ 
+    \vskip-0.2cm
+    \hskip3.1cm
+    research and innovation programme under Marie Sklodowska-Curie grant agreement No 766287.
+}
